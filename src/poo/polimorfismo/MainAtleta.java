@@ -27,6 +27,7 @@ public class MainAtleta {
 		j.setAltura(1.80f);
 		j.peso=0.4f;
 		System.out.println(j.getCpf());
+		System.out.println(j.getCpf("adm"));
 		System.out.println(j.cpf);
 		
 		

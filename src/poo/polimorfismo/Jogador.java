@@ -42,7 +42,20 @@ public class Jogador extends Atleta {
 			System.out.println("GOLLLLLL!");		
 	}
 	public String getCpf() {
-		return cpf.substring(0, 3)+"*******";
+		return cpf.substring(0, 1)+"*******";
+	}
+	
+	public String getCpf(String perfil) {
+		if(perfil.equals("adm"))
+			return cpf;
+		else
+			return this.getCpf();
+	}
+	public String getCpf(String perfil,String nivel) {
+		if(perfil.equals("adm"))
+			return cpf;
+		else
+			return this.getCpf();
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
