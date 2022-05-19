@@ -4,7 +4,7 @@ import java.util.Date;
 
 import enums.SexoEnum;
 
-public abstract class Pessoa {
+public abstract class Pessoa extends EntidadeBasica {
 	private String nome;
 	private String cpf;
 	private Date dataNascimento;

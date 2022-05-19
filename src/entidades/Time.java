@@ -3,7 +3,8 @@ package entidades;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Time {		 
+public class Time extends EntidadeBasica {		
+	
 	private String nome;
 	private Atleta tecnico;
 	private ArrayList<Atleta> jogadores = new ArrayList<Atleta>();
@@ -11,6 +12,10 @@ public class Time {
 		this.nome=nome;
 	}
 	
+	public Time(String nome,Atleta tecnico) {
+		this.nome=nome;
+		this.tecnico= tecnico;
+	}
 	public Time() {
 		
 	}
